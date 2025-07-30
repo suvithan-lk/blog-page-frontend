@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Professional BlogSpace</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-blog me-2"></i>BlogSpace
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">
+                            <i class="fas fa-cogs me-1"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">
+                            <i class="fas fa-newspaper me-1"></i>Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">
+                        <i class="fas fa-newspaper me-3"></i>Our Blog
+                    </h1>
+                    <p class="lead mb-4">Discover insights, tips, and stories from our team of experts. Stay updated with the latest trends and knowledge in our industry.</p>
+                    <div class="blog-search">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Search blog posts..." id="blogSearch">
+                            <button class="btn btn-light" type="button" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-outline-primary category-btn active" data-category="all">
+                            <i class="fas fa-th me-2"></i>All Posts
+                        </button>
+                        <button class="btn btn-outline-primary category-btn" data-category="technology">
+                            <i class="fas fa-laptop-code me-2"></i>Technology
+                        </button>
+                        <button class="btn btn-outline-primary category-btn" data-category="design">
+                            <i class="fas fa-palette me-2"></i>Design
+                        </button>
+                        <button class="btn btn-outline-primary category-btn" data-category="business">
+                            <i class="fas fa-briefcase me-2"></i>Business
+                        </button>
+                        <button class="btn btn-outline-primary category-btn" data-category="lifestyle">
+                            <i class="fas fa-heart me-2"></i>Lifestyle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Blog Content -->
+                <div class="col-lg-8">
+                    <!-- Featured Post -->
+                    <div class="featured-post mb-5">
+                        <div class="card border-0 shadow-lg overflow-hidden">
+                            <div class="featured-image bg-gradient position-relative">
+                                <div class="featured-overlay d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-rocket display-1 text-white opacity-75"></i>
+                                </div>
+                                <div class="position-absolute top-0 start-0 p-3">
+                                    <span class="badge bg-primary fs-6">Featured</span>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="badge bg-primary me-2">Technology</span>
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar me-1"></i>July 25, 2025
+                                    </small>
+                                    <small class="text-muted ms-3">
+                                        <i class="fas fa-clock me-1"></i>5 min read
+                                    </small>
+                                </div>
+                                <h2 class="card-title h3 mb-3">The Future of Web Development: Trends to Watch in 2025</h2>
+                                <p class="card-text text-muted mb-4">Explore the latest trends shaping the web development landscape, from AI integration to advanced CSS features and performance optimization techniques that every developer should know.</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="author-info d-flex align-items-center">
+                                        <div class="author-avatar bg-primary rounded-circle d-flex align-items-center justify-content-center me-3">
+                                            <i class="fas fa-user text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Sarah Johnson</h6>
+                                            <small class="text-muted">Senior Developer</small>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">
+                                        Read More <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="blog-posts-grid">
+                        <div class="row">
+                            <!-- Blog Post 1 -->
+                            <div class="col-md-6 mb-4" data-category="design">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-secondary d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-palette display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-success me-2">Design</span>
+                                                <small class="text-muted">July 20, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">Creating Stunning UI/UX Designs</h5>
+                                            <p class="card-text text-muted flex-grow-1">Learn the principles of modern UI/UX design and how to create interfaces that users love.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>1.2k views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog Post 2 -->
+                            <div class="col-md-6 mb-4" data-category="business">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-warning d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-chart-line display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-warning me-2">Business</span>
+                                                <small class="text-muted">July 18, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">Digital Marketing Strategies</h5>
+                                            <p class="card-text text-muted flex-grow-1">Effective digital marketing strategies to grow your business and reach your target audience.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>890 views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog Post 3 -->
+                            <div class="col-md-6 mb-4" data-category="technology">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-info d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-code display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-info me-2">Technology</span>
+                                                <small class="text-muted">July 15, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">JavaScript Best Practices</h5>
+                                            <p class="card-text text-muted flex-grow-1">Essential JavaScript best practices every developer should follow for clean, maintainable code.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>2.1k views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog Post 4 -->
+                            <div class="col-md-6 mb-4" data-category="lifestyle">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-danger d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-heart display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-danger me-2">Lifestyle</span>
+                                                <small class="text-muted">July 12, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">Work-Life Balance for Developers</h5>
+                                            <p class="card-text text-muted flex-grow-1">Tips and strategies for maintaining a healthy work-life balance in the tech industry.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>1.5k views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog Post 5 -->
+                            <div class="col-md-6 mb-4" data-category="design">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-primary d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-mobile-alt display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-primary me-2">Design</span>
+                                                <small class="text-muted">July 10, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">Mobile-First Design Approach</h5>
+                                            <p class="card-text text-muted flex-grow-1">Why mobile-first design is crucial and how to implement it effectively in your projects.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>980 views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog Post 6 -->
+                            <div class="col-md-6 mb-4" data-category="technology">
+                                <article class="blog-card h-100">
+                                    <div class="card border-0 shadow h-100">
+                                        <div class="card-img-placeholder bg-gradient-success d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-database display-4 text-white opacity-75"></i>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="mb-3">
+                                                <span class="badge bg-success me-2">Technology</span>
+                                                <small class="text-muted">July 8, 2025</small>
+                                            </div>
+                                            <h5 class="card-title">Database Optimization Tips</h5>
+                                            <p class="card-text text-muted flex-grow-1">Learn how to optimize your database queries and improve application performance significantly.</p>
+                                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-eye me-1"></i>1.7k views
+                                                </small>
+                                                <button class="btn btn-sm btn-outline-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="blog-sidebar">
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">
+                                        <i class="fas fa-fire me-2"></i>Popular Posts
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="popular-post mb-3 pb-3 border-bottom">
+                                        <h6 class="mb-2">Getting Started with React Hooks</h6>
+                                        <small class="text-muted">
+                                            <i class="fas fa-eye me-1"></i>3.2k views
+                                        </small>
+                                    </div>
+                                    <div class="popular-post mb-3 pb-3 border-bottom">
+                                        <h6 class="mb-2">CSS Grid vs Flexbox: When to Use Which</h6>
+                                        <small class="text-muted">
+                                            <i class="fas fa-eye me-1"></i>2.8k views
+                                        </small>
+                                    </div>
+                                    <div class="popular-post mb-3 pb-3 border-bottom">
+                                        <h6 class="mb-2">Building Responsive Websites</h6>
+                                        <small class="text-muted">
+                                            <i class="fas fa-eye me-1"></i>2.5k views
+                                        </small>
+                                    </div>
+                                    <div class="popular-post">
+                                        <h6 class="mb-2">SEO Best Practices for 2025</h6>
+                                        <small class="text-muted">
+                                            <i class="fas fa-eye me-1"></i>2.1k views
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="sidebar-widget mb-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-secondary text-white">
+                                    <h5 class="mb-0">
+                                        <i class="fas fa-folder me-2"></i>Categories
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="category-item d-flex justify-content-between align-items-center mb-2">
+                                        <a href="#" class="text-decoration-none">Technology</a>
+                                        <span class="badge bg-primary">12</span>
+                                    </div>
+                                    <div class="category-item d-flex justify-content-between align-items-center mb-2">
+                                        <a href="#" class="text-decoration-none">Design</a>
+                                        <span class="badge bg-success">8</span>
+                                    </div>
+                                    <div class="category-item d-flex justify-content-between align-items-center mb-2">
+                                        <a href="#" class="text-decoration-none">Business</a>
+                                        <span class="badge bg-warning">6</span>
+                                    </div>
+                                    <div class="category-item d-flex justify-content-between align-items-center">
+                                        <a href="#" class="text-decoration-none">Lifestyle</a>
+                                        <span class="badge bg-danger">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter Signup -->
+                        <div class="sidebar-widget mb-4">
+                            <div class="card border-0 shadow bg-gradient">
+                                <div class="card-body text-center text-white">
+                                    <i class="fas fa-envelope-open display-4 mb-3 opacity-75"></i>
+                                    <h5 class="mb-3">Subscribe to Our Newsletter</h5>
+                                    <p class="mb-4">Get the latest posts delivered right to your inbox.</p>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Your email">
+                                        <button class="btn btn-light" type="button">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="sidebar-widget">
+                            <div class="card border-0 shadow">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">
+                                        <i class="fas fa-tags me-2"></i>Tags
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tags-cloud">
+                                        <span class="badge bg-light text-dark me-2 mb-2">JavaScript</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">React</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">CSS</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">HTML</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">Bootstrap</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">UI/UX</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">SEO</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">Marketing</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">Design</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2">Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-blog me-2"></i>BlogSpace
+                    </h5>
+                    <p class="text-muted">Creating meaningful content that inspires and educates our community of readers and writers.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="index.html#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="index.html#services" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="blog.html" class="text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="index.html#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Content Writing</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">SEO Optimization</a></li>
+                        <li><a href="#" class="text-decoration-none">Design Services</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="mb-3">Newsletter</h6>
+                    <p class="text-muted small">Subscribe to get updates on our latest posts.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 BlogSpace. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
