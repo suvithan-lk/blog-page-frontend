@@ -14,12 +14,12 @@ A fully responsive, clean, and modern user interface built using **HTML**, **CSS
 
 ## 📂 Project Structure
 
-project-folder/
+**project-folder/
 │
 ├── index.html # Main HTML file
 ├── style.css # All styles (can be modularized)
 ├── main.js # JavaScript for interactivity
-└── assets/ # Images, icons, fonts, etc.
+└── assets/ # Images, icons, fonts, etc.**
 
 
 ## 📸 Demo Preview
@@ -42,9 +42,9 @@ project-folder/
 
 ## 🧑‍💻 Author
 
-- **Name**: [Your Name](https://yourportfolio.com)
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Name**: A.Suvithan  |  (https://suvithan.com)
+- **GitHub**: (https://github.com/suvithan-lk)
+- **LinkedIn**: (https://linkedin.com/in/anantharasa-suvithan)
 
 ## 📄 License
 
