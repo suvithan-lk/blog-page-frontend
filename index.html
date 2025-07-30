@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Blog</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <i class="fas fa-blog me-2"></i>BlogSpace
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-section="home">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-section="about">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-section="services">
+                            <i class="fas fa-cogs me-1"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            <i class="fas fa-newspaper me-1"></i>Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-section="contact">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold text-primary mb-4">Welcome to BlogSpace</h1>
+                        <p class="lead text-muted mb-4">Discover amazing stories, insights, and knowledge through our carefully crafted blog posts. Join our community of readers and writers.</p>
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-primary btn-lg">
+                                <i class="fas fa-rocket me-2"></i>Get Started
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-play me-2"></i>Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <i class="fas fa-laptop-code display-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-content d-none">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="lead text-muted">We are passionate about sharing knowledge and creating meaningful content that inspires and educates our readers.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p class="text-muted">We bring fresh perspectives and innovative ideas to every piece of content we create.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community</h4>
+                            <p class="text-muted">Building a strong community of readers and writers who share knowledge and experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Quality</h4>
+                            <p class="text-muted">We maintain the highest standards of quality in all our content and services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-content d-none">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Our Services</h2>
+                        <p class="lead text-muted">We offer a range of services to help you succeed in your digital journey.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h4>Content Writing</h4>
+                            <p class="text-muted">Professional content writing services for blogs, websites, and marketing materials.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Blog Posts</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Articles</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Copywriting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>SEO Optimization</h4>
+                            <p class="text-muted">Boost your online visibility with our comprehensive SEO services.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Keyword Research</li>
+                                <li><i class="fas fa-check text-success me-2"></i>On-page SEO</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Design Services</h4>
+                            <p class="text-muted">Creative design solutions for your brand and digital presence.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Web Design</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Graphics</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Branding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-content d-none">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Contact Us</h2>
+                        <p class="lead text-muted">Get in touch with us. We'd love to hear from you!</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-info text-center">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h5>Address</h5>
+                                    <p class="text-muted">123 Blog Street<br>Digital City, DC 12345</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-info text-center">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h5>Phone</h5>
+                                    <p class="text-muted">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-info text-center">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h5>Email</h5>
+                                    <p class="text-muted">hello@blogspace.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form mt-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-blog me-2"></i>BlogSpace
+                    </h5>
+                    <p class="text-muted">Creating meaningful content that inspires and educates our community of readers and writers.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="#services" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="blog.html" class="text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Content Writing</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">SEO Optimization</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Design Services</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="mb-3">Newsletter</h6>
+                    <p class="text-muted small">Subscribe to get updates on our latest posts.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 BlogSpace. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
